@@ -1,10 +1,11 @@
 
 .contacts_wrapper {
-    margin: 100px 0 0 0;
+    margin: 100px 0 100px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    justify-content: center;
 }
 
 .contacts_wrapper--title {
@@ -14,10 +15,14 @@
 
 .contacts_wrapper--text {
     color: #a0aec0;
+    text-align: center;
 }
 
 .contacts_wrapper--myContacts {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
     width: 100%;
 }
@@ -32,7 +37,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 400px;
+    height: 160px;
+    max-width: 220px;
     width: 100%;
     padding: 20px;
     background-color: rgba(26,
@@ -41,7 +47,7 @@
             0.7);
     border: 1px solid rgba(53, 64, 112, 0.7);
     border-radius: 4px;
-    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out, transform .4s ease-in-out, color .2s ease-in-out;
 }
 
 .myContacts_wrapper:hover {
@@ -62,4 +68,17 @@
 
 .myContacts_wrapper--link {
     color: var(--main-text-color);
+}
+
+.myContacts_wrapper--link:hover {
+    color: #99cabb;
+}
+
+@media (max-width: 480px) {
+    .contacts_wrapper--title {
+        font-size: 30px;
+    }
+    .contacts_wrapper--text {
+        font-size: 14px;
+    }
 }
