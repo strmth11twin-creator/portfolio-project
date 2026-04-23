@@ -1,0 +1,65 @@
+
+.contacts_wrapper {
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.contacts_wrapper--title {
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.contacts_wrapper--text {
+    color: #a0aec0;
+}
+
+.contacts_wrapper--myContacts {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.myContacts_wrapper--contact {
+    color: var(--text-color);
+}
+
+.myContacts_wrapper {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(26,
+            32,
+            60,
+            0.7);
+    border: 1px solid rgba(53, 64, 112, 0.7);
+    border-radius: 4px;
+    transition: box-shadow .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.myContacts_wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 3px 3px 20px var(--main-text-color);
+}
+
+.myContacts_wrapper--img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+
+}
+
+.telephone {
+    border-radius: 50%;
+}
+
+.myContacts_wrapper--link {
+    color: var(--main-text-color);
+}
