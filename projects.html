@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Projects</title>
 </head>
+
 <body>
 
     <div class="mobile-menu">
         <label for="toggler-id">
             <img src="menu-bar (2).png " alt="burger button" class="burger">
         </label>
-    
+
         <input type="checkbox" id="toggler-id" class="mobile-toggler">
-    
+
         <nav class="mobile-menu--navigation">
             <ul class="mobile-menu_list">
                 <li class="mobile-menu--item"><a href="index.html">Главная</a></li>
@@ -22,27 +24,75 @@
                 <li class="mobile-menu--item"><a href="projects.html">Проекты</a></li>
                 <li class="mobile-menu--item"><a href="contacts.html">Контакты</a></li>
             </ul>
-    
+
             <label for="toggler-id">
                 <img src="cross.png" class="close" alt="">
             </label>
         </nav>
     </div>
     <header class="header">
-    <div class="container">
-        <div class="header_wrapper">
-            <h1 class="header_wrapper--title"><a href="index.html">Emmanuil</a></h1>
-            <nav class="header_wrapper--navigation">
-                <ul class="navigation_list">
-                    <li class="navigation_list--item"><a href="index.html">Главная</a></li>
-                    <li class="navigation_list--item"><a href="about.html">Обо мне</a></li>
-                    <li class="navigation_list--item"><a href="projects.html">Проекты</a></li>
-                    <li class="navigation_list--item"><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="header_wrapper">
+                <h1 class="header_wrapper--title"><a href="index.html">Emmanuil</a></h1>
+                <nav class="header_wrapper--navigation">
+                    <ul class="navigation_list">
+                        <li class="navigation_list--item"><a href="index.html">Главная</a></li>
+                        <li class="navigation_list--item"><a href="about.html">Обо мне</a></li>
+                        <li class="navigation_list--item"><a href="projects.html">Проекты</a></li>
+                        <li class="navigation_list--item"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
     </header>
     <hr class="divider">
+    <section class="projects">
+        <div class="container">
+            <div class="projects_wrapper">
+                <h2 class="projects_wrapper--title">Мои проекты</h2>
+
+                <div class="wrapper-cards">
+                    <div class="projects_wrapper--cards">
+                        <h3 class="card_title">Todo-List</h3>
+                        <p class="card_desc">Простой удобный список задач с возможностью добавления, удаления и отметки
+                            выполнения</p>
+                        <ul class="card_languages--list">
+                            <li class="list_item">HTML</li>
+                            <li class="list_item">CSS</li>
+                            <li class="list_item">JavaScript</li>
+                        </ul>
+                        <button class="card_btn"><a href="https://strmth11twin-creator.github.io/Todo-List-With-API/" target="_blank">Открыть проект</a></button>
+                    </div>
+
+                    <div class="projects_wrapper--cards">
+                        <h3 class="card_title">Users-Management</h3>
+                        <p class="card_desc">CRUD-приложение для управления пользователями. Добавление, редактирование и удаление данных</p>
+                        <ul class="card_languages--list">
+                            <li class="list_item">HTML</li>
+                            <li class="list_item">CSS</li>
+                            <li class="list_item">JavaScript</li>
+                            <li class="list_item">API</li>
+                        </ul>
+                        <button class="card_btn"><a href="https://strmth11twin-creator.github.io/Users-Managment-API/" target="_blank">Открыть проект</a></button>
+                    </div>
+
+                    <div class="projects_wrapper--cards">
+                        <h3 class="card_title">Chat UI App</h3>
+                        <p class="card_desc">Интерфейс чат-приложения с реализацией списка чатов, отправки сообщений, поиска и фильтрации</p>
+                        <ul class="card_languages--list">
+                            <li class="list_item">HTML</li>
+                            <li class="list_item">CSS</li>
+                            <li class="list_item">JavaScript</li>
+                        </ul>
+                        <button class="card_btn"><a href="https://strmth11twin-creator.github.io/Telegram-APP/" target="_blank">Открыть проект</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
 </body>
+
 </html>
